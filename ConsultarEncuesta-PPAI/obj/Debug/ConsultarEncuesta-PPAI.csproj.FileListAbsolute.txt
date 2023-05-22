@@ -1,0 +1,11 @@
+E:\UTN-FRC\2023\DSI\PPAI\ConsultarEncuesta-PPAI\ConsultarEncuesta-PPAI\obj\Debug\ConsultarEncuesta-PPAI.csproj.AssemblyReference.cache
+E:\UTN-FRC\2023\DSI\PPAI\ConsultarEncuesta-PPAI\ConsultarEncuesta-PPAI\obj\Debug\ConsultarEncuesta-PPAI.csproj.SuggestedBindingRedirects.cache
+E:\UTN-FRC\2023\DSI\PPAI\ConsultarEncuesta-PPAI\ConsultarEncuesta-PPAI\obj\Debug\ConsultarEncuesta_PPAI.PantallaConsultarEncuesta.resources
+E:\UTN-FRC\2023\DSI\PPAI\ConsultarEncuesta-PPAI\ConsultarEncuesta-PPAI\obj\Debug\ConsultarEncuesta_PPAI.Properties.Resources.resources
+E:\UTN-FRC\2023\DSI\PPAI\ConsultarEncuesta-PPAI\ConsultarEncuesta-PPAI\obj\Debug\ConsultarEncuesta-PPAI.csproj.GenerateResource.cache
+E:\UTN-FRC\2023\DSI\PPAI\ConsultarEncuesta-PPAI\ConsultarEncuesta-PPAI\obj\Debug\ConsultarEncuesta-PPAI.csproj.CoreCompileInputs.cache
+E:\UTN-FRC\2023\DSI\PPAI\ConsultarEncuesta-PPAI\ConsultarEncuesta-PPAI\bin\Debug\ConsultarEncuesta-PPAI.exe.config
+E:\UTN-FRC\2023\DSI\PPAI\ConsultarEncuesta-PPAI\ConsultarEncuesta-PPAI\bin\Debug\ConsultarEncuesta-PPAI.exe
+E:\UTN-FRC\2023\DSI\PPAI\ConsultarEncuesta-PPAI\ConsultarEncuesta-PPAI\bin\Debug\ConsultarEncuesta-PPAI.pdb
+E:\UTN-FRC\2023\DSI\PPAI\ConsultarEncuesta-PPAI\ConsultarEncuesta-PPAI\obj\Debug\ConsultarEncuesta-PPAI.exe
+E:\UTN-FRC\2023\DSI\PPAI\ConsultarEncuesta-PPAI\ConsultarEncuesta-PPAI\obj\Debug\ConsultarEncuesta-PPAI.pdb
