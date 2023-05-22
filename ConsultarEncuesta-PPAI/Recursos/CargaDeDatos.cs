@@ -11,16 +11,17 @@ namespace ConsultarEncuesta_PPAI.Recursos
     {
         public static DateTime fechaHoraInicio = DateTime.Now;
 
-        //Llamadas
-        public static Llamada llamada1 = new Llamada("Operador 1", "Detalle 1", 0.3, true, "Observacion 1");
-        public static Llamada llamada2 = new Llamada("Operador 2", "Detalle 2", 0.5, false, "Observacion 2");
-        public static Llamada llamada3 = new Llamada("Operador 3", "Detalle 3", 1, true, "Observacion 3");
-
         //Estados
         public static Estado estado1 = new Estado("Iniciada");
 
         //Cambio Estados
-        public static CambioEstado cambioEstado1 = new CambioEstado(fechaHoraInicio, estado1);
+        public static CambioEstado cambioEstado1 = new CambioEstado(DateTime.Parse("2023/05/20"), estado1);
+        public static CambioEstado cambioEstado2 = new CambioEstado(DateTime.Parse("2023/05/21"), estado1);
+
+        //Llamadas
+        public static Llamada llamada1 = new Llamada("Operador 1", "Detalle 1", 0.3, true, "Observacion 1", cambioEstado1);
+        public static Llamada llamada2 = new Llamada("Operador 2", "Detalle 2", 0.5, false, "Observacion 2", cambioEstado1);
+        public static Llamada llamada3 = new Llamada("Operador 3", "Detalle 3", 1, true, "Observacion 3", cambioEstado2);
 
         public static List<Llamada> loadLLamadas()
         {

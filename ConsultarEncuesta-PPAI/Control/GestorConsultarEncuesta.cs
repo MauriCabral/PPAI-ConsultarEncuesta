@@ -6,6 +6,7 @@ using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace ConsultarEncuesta_PPAI.Control
 {
@@ -29,23 +30,25 @@ namespace ConsultarEncuesta_PPAI.Control
               
         }
 
-        public List<DateTime> buscarLlamadasConEncuestasResp()
+        public void buscarLlamadasConEncuestasResp(DateTime desde, DateTime hasta)
         {
-            List<DateTime> llamadas = new List<DateTime>();
+            Dictionary<Llamada, DateTime> llamadasPeriodo = new Dictionary<Llamada, DateTime>();
+            //List<DateTime> llamadas = new List<DateTime>();
+            llamadasIniciadas = CargaDeDatos.loadLLamadas();
+
             //List<Llamada> llamadasCargadas = CargaDeDatos.loadLLamadas();
-            
+
             if (this.llamadasIniciadas.Count != 0)
             {
                 foreach (Llamada llamadaCarg in llamadasIniciadas)
                 {
-                    if (llamadaCarg.esDePeriodo(this.pantallaEncuestas.tomarSeleccionFechaInicioPerdiodo(), this.pantallaEncuestas.tomarSeleccionFechaFinPerdiodo()))
+                    if (llamadaCarg.esDePeriodo(desde, hasta))
                     {
-                        llamadas.Add(llamadaCarg.getFechaHoraInicioCE());
+                        llamadasPeriodo.Add(llamadaCarg, llamadaCarg.getFechaHoraInicioCE());
                     }
                 }
             }
-            return llamadas;
+            pantallaConsultarEncuesta.mostrarLlamadasPeriodo(llamadasPeriodo);
         }
-        
     }
 }

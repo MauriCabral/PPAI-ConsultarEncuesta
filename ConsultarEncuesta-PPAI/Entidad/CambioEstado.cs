@@ -28,10 +28,10 @@ namespace ConsultarEncuesta_PPAI.Entidad
             else
                 return false;
         }
-        public bool esEstadoInicial1()
-        {
-            return fechaHoraInicio != null;
-            //return this.estado.esIniciada();
-        }
+        //public bool esEstadoInicial1()
+        //{
+        //    return fechaHoraInicio != null;
+        //    //return this.estado.esIniciada();
+        //}
     }
 }

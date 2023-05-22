@@ -1,4 +1,5 @@
 ﻿using ConsultarEncuesta_PPAI.Control;
+using ConsultarEncuesta_PPAI.Entidad;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -58,21 +59,29 @@ namespace ConsultarEncuesta_PPAI
             return fechaHasta;
         }
 
-        public void mostrarLlamadasPeriodo(string[,] lp)
+        private void btnBuscar_Click(object sender, EventArgs e)
         {
-            for (int i = 0; i < lp.GetLength(0); i++)
+            this.gestor.buscarLlamadasConEncuestasResp(this.tomarSeleccionFechaInicioPerdiodo(), this.tomarSeleccionFechaFinPerdiodo());
+        }
+
+        public void mostrarLlamadasPeriodo(Dictionary<Llamada, DateTime> llamadas)
+        {
+            gridLlamadas.AutoGenerateColumns = false;
+            gridLlamadas.Rows.Clear();
+            foreach (var llamada in llamadas)
             {
-                var fila = new string[]
-                {
-                    lp[i, 1].ToString(),
-                };
-                gridLlamadas.Rows.Add(fila);
+                gridLlamadas.Rows.Add(llamada.Value);
             }
         }
 
-        private void btnBuscar_Click(object sender, EventArgs e)
+        private void gridLlamadas_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            //this.mostrarLlamadasPeriodo();
+
+        }
+
+        private void gridLlamadas_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            MessageBox.Show(gridLlamadas.CurrentRow.Cells[0].Value.ToString());
         }
 
         //internal void mostrarLlamadasPorPeriodo(List<Llamada> listaLlamadas)
