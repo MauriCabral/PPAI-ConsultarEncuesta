@@ -33,10 +33,7 @@ namespace ConsultarEncuesta_PPAI.Control
         public void buscarLlamadasConEncuestasResp(DateTime desde, DateTime hasta)
         {
             Dictionary<Llamada, DateTime> llamadasPeriodo = new Dictionary<Llamada, DateTime>();
-            //List<DateTime> llamadas = new List<DateTime>();
             llamadasIniciadas = CargaDeDatos.loadLLamadas();
-
-            //List<Llamada> llamadasCargadas = CargaDeDatos.loadLLamadas();
 
             if (this.llamadasIniciadas.Count != 0)
             {
@@ -49,6 +46,21 @@ namespace ConsultarEncuesta_PPAI.Control
                 }
             }
             pantallaConsultarEncuesta.mostrarLlamadasPeriodo(llamadasPeriodo);
+        }
+
+        public DateTime tomarSeleccionLlamada(DateTime llamadaSeleccionada)
+        {
+            return llamadaSeleccionada;
+        }
+
+        public void llamadaSeleccionada(Llamada llamadaSeleccionada)
+        {
+
+        }
+
+        public void buscarDatosLlamada()
+        { 
+
         }
     }
 }

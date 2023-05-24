@@ -54,6 +54,7 @@
     </Compile>
     <Compile Include="Control\GestorConsultarEncuesta.cs" />
     <Compile Include="Entidad\CambioEstado.cs" />
+    <Compile Include="Entidad\Cliente.cs" />
     <Compile Include="Entidad\Estado.cs" />
     <Compile Include="Entidad\Llamada.cs" />
     <Compile Include="Program.cs" />

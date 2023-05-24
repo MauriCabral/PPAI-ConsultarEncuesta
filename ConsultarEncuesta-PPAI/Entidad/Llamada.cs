@@ -15,8 +15,9 @@ namespace ConsultarEncuesta_PPAI.Entidad
         private string observacionAuditor;
         //private List<CambioEstado> cambioEstado;
         private CambioEstado cambio;
+        private Cliente cliente;
 
-        public Llamada(string descripcionOperador, string detalleAccionRequerida, double duracion, bool encuestaEnviada, string observacionAuditor, CambioEstado cambio)
+        public Llamada(string descripcionOperador, string detalleAccionRequerida, double duracion, bool encuestaEnviada, string observacionAuditor, CambioEstado cambio, Cliente cliente)
         {
             this.descripcionOperador = descripcionOperador;
             this.detalleAccionRequerida = detalleAccionRequerida;
@@ -24,6 +25,7 @@ namespace ConsultarEncuesta_PPAI.Entidad
             this.encuestaEnviada = encuestaEnviada;
             this.observacionAuditor = observacionAuditor;
             this.cambio = cambio;
+            this.cliente = cliente;
         }
         public Llamada(string descripcionOperador, string detalleAccionRequerida, double duracion, bool encuestaEnviada, string observacionAuditor)
         {
@@ -44,5 +46,10 @@ namespace ConsultarEncuesta_PPAI.Entidad
             }
             return false;
         }
+
+        //public string getNombreClienteDeLlamada(DateTime nombreLlamada)
+        //{
+        //    if()
+        //}
     }
 }

@@ -74,23 +74,19 @@ namespace ConsultarEncuesta_PPAI
             }
         }
 
-        private void gridLlamadas_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
+        private void tomarSeleccionLlamada(object sender, DataGridViewCellEventArgs e)
         {
-
+            DateTime periodoDeLlamada = (DateTime)gridLlamadas.CurrentRow.Cells[0].Value;
+            gestor.tomarSeleccionLlamada(periodoDeLlamada);
+            this.lblDatosLLamada.Visible = true;
+            this.lblCliente.Visible = true;
+            this.txtDatoCliente.Visible = true;
+            this.lblEstadoActual.Visible = true;
+            this.txtDatoEstado.Visible = true;
+            this.lblDuracion.Visible = true;
+            this.txtDatoDuracion.Visible = true;
+            this.gridDatosLlamadaSeleccion.Visible = true;
+            this.btnGenerarCsv.Visible = true;
         }
-
-        private void gridLlamadas_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            MessageBox.Show(gridLlamadas.CurrentRow.Cells[0].Value.ToString());
-        }
-
-        //internal void mostrarLlamadasPorPeriodo(List<Llamada> listaLlamadas)
-        //{
-        //    gridLlamadas.Rows.Clear();
-        //    foreach (var llamada in listaLlamadas)
-        //    {
-        //        gridLlamadas.Rows.Add(llamada);
-        //    }
-        //}
     }
 }
