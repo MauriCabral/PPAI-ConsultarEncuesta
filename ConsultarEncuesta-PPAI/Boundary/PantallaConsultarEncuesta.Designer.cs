@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
             this.lblTitPrincipal = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnConsultarEncuesta = new System.Windows.Forms.Button();
@@ -53,6 +53,7 @@
             this.respuestasSelecc = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.descripcionPregs = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.descripcionEncuesta = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnImprimir = new System.Windows.Forms.Button();
             this.btnGenerarCsv = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridLlamadas)).BeginInit();
@@ -82,7 +83,7 @@
             // 
             // btnConsultarEncuesta
             // 
-            this.btnConsultarEncuesta.Location = new System.Drawing.Point(277, 139);
+            this.btnConsultarEncuesta.Location = new System.Drawing.Point(285, 174);
             this.btnConsultarEncuesta.Name = "btnConsultarEncuesta";
             this.btnConsultarEncuesta.Size = new System.Drawing.Size(175, 38);
             this.btnConsultarEncuesta.TabIndex = 2;
@@ -92,7 +93,7 @@
             // 
             // btnSalir
             // 
-            this.btnSalir.Location = new System.Drawing.Point(302, 199);
+            this.btnSalir.Location = new System.Drawing.Point(314, 232);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(124, 33);
             this.btnSalir.TabIndex = 3;
@@ -163,15 +164,16 @@
             this.gridLlamadas.AllowUserToAddRows = false;
             this.gridLlamadas.AllowUserToOrderColumns = true;
             this.gridLlamadas.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.gridLlamadas.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
             this.gridLlamadas.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.EnableAlwaysIncludeHeaderText;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridLlamadas.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridLlamadas.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle9;
             this.gridLlamadas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gridLlamadas.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.llamadas});
@@ -256,19 +258,20 @@
             this.gridDatosLlamadaSeleccion.AllowUserToAddRows = false;
             this.gridDatosLlamadaSeleccion.AllowUserToOrderColumns = true;
             this.gridDatosLlamadaSeleccion.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.gridDatosLlamadaSeleccion.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
             this.gridDatosLlamadaSeleccion.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gridDatosLlamadaSeleccion.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.respuestasSelecc,
             this.descripcionPregs,
             this.descripcionEncuesta});
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.gridDatosLlamadaSeleccion.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle10.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.gridDatosLlamadaSeleccion.DefaultCellStyle = dataGridViewCellStyle10;
             this.gridDatosLlamadaSeleccion.Location = new System.Drawing.Point(86, 374);
             this.gridDatosLlamadaSeleccion.Name = "gridDatosLlamadaSeleccion";
             this.gridDatosLlamadaSeleccion.Size = new System.Drawing.Size(609, 142);
@@ -292,15 +295,28 @@
             this.descripcionEncuesta.Name = "descripcionEncuesta";
             this.descripcionEncuesta.Width = 124;
             // 
+            // btnImprimir
+            // 
+            this.btnImprimir.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.btnImprimir.Location = new System.Drawing.Point(257, 539);
+            this.btnImprimir.Name = "btnImprimir";
+            this.btnImprimir.Size = new System.Drawing.Size(101, 23);
+            this.btnImprimir.TabIndex = 22;
+            this.btnImprimir.Text = "Imprimir";
+            this.btnImprimir.UseVisualStyleBackColor = true;
+            this.btnImprimir.Visible = false;
+            // 
             // btnGenerarCsv
             // 
-            this.btnGenerarCsv.Location = new System.Drawing.Point(325, 537);
+            this.btnGenerarCsv.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.btnGenerarCsv.Location = new System.Drawing.Point(385, 539);
             this.btnGenerarCsv.Name = "btnGenerarCsv";
             this.btnGenerarCsv.Size = new System.Drawing.Size(101, 23);
-            this.btnGenerarCsv.TabIndex = 22;
-            this.btnGenerarCsv.Text = "Generar CSV";
+            this.btnGenerarCsv.TabIndex = 23;
+            this.btnGenerarCsv.Text = "Generar Csv";
             this.btnGenerarCsv.UseVisualStyleBackColor = true;
             this.btnGenerarCsv.Visible = false;
+            this.btnGenerarCsv.Click += new System.EventHandler(this.tomarSeleccionDeVisualizacion);
             // 
             // PantallaConsultarEncuesta
             // 
@@ -309,6 +325,8 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(762, 585);
             this.Controls.Add(this.btnGenerarCsv);
+            this.Controls.Add(this.gridLlamadas);
+            this.Controls.Add(this.btnImprimir);
             this.Controls.Add(this.gridDatosLlamadaSeleccion);
             this.Controls.Add(this.txtDatoDuracion);
             this.Controls.Add(this.txtDatoEstado);
@@ -317,7 +335,6 @@
             this.Controls.Add(this.lblDuracion);
             this.Controls.Add(this.lblCliente);
             this.Controls.Add(this.lblDatosLLamada);
-            this.Controls.Add(this.gridLlamadas);
             this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.lblHasta);
             this.Controls.Add(this.lblDesde);
@@ -364,6 +381,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn respuestasSelecc;
         private System.Windows.Forms.DataGridViewTextBoxColumn descripcionPregs;
         private System.Windows.Forms.DataGridViewTextBoxColumn descripcionEncuesta;
+        private System.Windows.Forms.Button btnImprimir;
         private System.Windows.Forms.Button btnGenerarCsv;
     }
 }

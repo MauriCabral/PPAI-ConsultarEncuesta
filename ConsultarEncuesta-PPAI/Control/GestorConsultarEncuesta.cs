@@ -16,7 +16,6 @@ namespace ConsultarEncuesta_PPAI.Control
         private List<Llamada> llamadasIniciadas;
         private List<CambioEstado> cambioEstados;
         private List<Estado> estados;
-        private PantallaConsultarEncuesta pantallaEncuestas;
 
         public GestorConsultarEncuesta(PantallaConsultarEncuesta pantallaConsultarEncuesta)
         {
@@ -61,6 +60,29 @@ namespace ConsultarEncuesta_PPAI.Control
         public void buscarDatosLlamada()
         { 
 
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        public void finCU()
+        {
+            MessageBox.Show("CSV generado con éxito", "Importante", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            pantallaConsultarEncuesta.Dispose();
         }
     }
 }

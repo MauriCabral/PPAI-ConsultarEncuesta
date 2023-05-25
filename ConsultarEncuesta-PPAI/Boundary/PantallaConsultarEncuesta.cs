@@ -86,7 +86,13 @@ namespace ConsultarEncuesta_PPAI
             this.lblDuracion.Visible = true;
             this.txtDatoDuracion.Visible = true;
             this.gridDatosLlamadaSeleccion.Visible = true;
-            this.btnGenerarCsv.Visible = true;
+            this.btnImprimir.Visible = true;
+            this.btnGenerarCsv.Visible = true;  
+        }
+
+        private void tomarSeleccionDeVisualizacion(object sender, EventArgs e)
+        {
+            gestor.finCU();
         }
     }
 }
